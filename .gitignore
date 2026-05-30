@@ -1,0 +1,42 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.ipython/
+build/
+dist/
+
+# ---- Virtual environments ----
+.venv/
+venv/
+env/
+ENV/
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# ---- IDE / editor ----
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ---- Project artifacts ----
+# Serialized models are large & reproducible from src/train.py -> keep out of git.
+models/
+scored_applicants.csv
+
+# Generated reports/figures/metrics are reproducible from the pipeline and
+# include large HTML reports -> keep out of git.
+results/
+
+# ---- Data ----
+# Datasets are large and not committed; obtain them out-of-band (or via git-lfs).
+datasets/
